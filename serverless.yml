@@ -1,0 +1,18 @@
+service: serverless-test-branching
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-finch
+
+custom:
+  siteName: dynamic
+  client:
+    bucketName: ${opt:branch,'main'}-${self:custom.siteName}
+    distributionFolder: build
+    indexDocument: index.html
+    errorDocument: index.html
