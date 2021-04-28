@@ -18,7 +18,7 @@ jobs:
       - run: yarn install
       - run: yarn run build
       - name: Serverless deploy.
-        uses: serverless/github-action@v2.28.0
+        uses: serverless/github-action@master
         with:
           args: -c "serverless plugin install --name serverless-finch && serverless client deploy --branch=${GITHUB_REF##*/} --verbose"
         env:
