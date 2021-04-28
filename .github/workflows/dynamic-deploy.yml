@@ -18,9 +18,8 @@ jobs:
       - run: yarn install
       - run: yarn run build
       - run: yarn global add serverless
-      - run: npx serverless client deploy --branch=${GITHUB_REF##*/} --verbose
+      - run: npx serverless client deploy --branch=${GITHUB_REF##*/} --no-confirm
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SLS_DEBUG: 1
     

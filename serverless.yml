@@ -10,7 +10,7 @@ plugins:
   - serverless-finch
 
 custom:
-  siteName: dynamic
+  siteName: a-very-dynamic-app
   client:
     bucketName: ${opt:branch,'main'}-${self:custom.siteName}
     distributionFolder: build
