@@ -7,4 +7,6 @@ jobs:
   clean:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - run: export BRANCH=$(git branch --show-current)
       - run: env
