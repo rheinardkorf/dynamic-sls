@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          DYNAMIC!!!!
+          Test delete.
         </a>
       </header>
     </div>
