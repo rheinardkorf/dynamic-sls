@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          DYNAMIC!!!!
+          Cleanup test!!!!
         </a>
       </header>
     </div>
